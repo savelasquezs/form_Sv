@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #1F1E4B;
+}
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+header img {
+    width: 5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+header img:hover {
+    transform: scale(1.025);
+}
+
+header .main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .main-logo span {
+    font-family: 'Alegreya SC', serif;
+    color: aliceblue;
+    font-size: 2rem;
+    padding-left: 1rem;
+    transition: transform 0.4s ease;
+}
+
+header .main-logo span:hover {
+    transform: scale(1.2);
+}
+
+header ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    align-items: center;
+}
+
+header ul li {
+    padding: 2rem;
+}
+
+header ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    box-shadow: -2px 5px 15px 2.5px rgba(0, 0, 0, 0.48);
+    background-color: #4D5785;
+    color:white;
+}
+
+main {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/tec.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .card {
+    width: 30vw;
+    height: 70vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s linear;
+}
+
+.father:hover .card {
+    transform: rotateY(180deg);
+}
+
+.face {
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.face.front {
+    display: grid;
+    align-items: center;
+}
+
+main .container{
+    border: 0.1rem solid #cacaca;
+    border-radius: 1rem;
+    background-color: rgba(43, 41, 105, 0.5) ;
+    max-height: fit-content;
+    transform: rotateY(180deg);
+}
+
+main .container .container-header  {
+    font-family: 'Alegreya SC', serif;
+    font-size: 3rem;
+    color:aliceblue;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+    background-color:  rgba(38, 33, 88, 0.5);
+    padding: 5rem;
+    border-radius: 1rem;
+    display: grid;
+    justify-items: center;
+}
+
+main .container form {
+    display: grid;
+    justify-content: center;
+    height: fit-content;
+}
+
+main .container .inpt {
+    font-size: 2rem;
+    margin:0.5rem 2rem;
+    border-radius: 0.8rem;
+}
+
+main .container .inpt:hover {
+    box-shadow: 3px 2px 2px 0px rgb(31, 31, 31);
+    transform: scale(1.025);
+}
+
+main .container .inpt::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 100px;/* Centrado vertical */
+}
+
+main .container img {
+    width: 5rem;
+    margin-top: 1rem;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+main .container .container-header img:hover {
+    transform: scale(1.05);
+}
+
+main .container .sbmit {
+    align-self: center;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color:#3f8880;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+main .container .sbmit:hover {
+    border: 1px solid wheat;
+    transform: scale(1.025);
+    color: midnightblue;
+    background-color: #20c67a;
+}
